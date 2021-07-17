@@ -1,4 +1,4 @@
-function addListTrello(board) {
+function addList(board) {
 	return function () {
 		var titleInput = document.getElementById('list_title_input')
 
@@ -9,8 +9,8 @@ function addListTrello(board) {
 		function titleButtonClick(evt) {
 			evt.preventDefault()
 			var title = titleInput.value.trim()
-				, index = board.lists.length - 1
-				, list
+			var index = board.lists.length - 1
+			var list
 
 			board.titleFormNode.style.display = 'none'
 			titleInput.value = ''

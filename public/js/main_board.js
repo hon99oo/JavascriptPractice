@@ -25,7 +25,7 @@
 			this.listsNode.appendChild(this.lists[i].node)
 		}
 		this.lists[this.lists.length - 1].node.appendChild(this.titleFormNode)
-		this.lists[this.lists.length - 1].titleNode.onclick = addListTrello(this)
+		this.lists[this.lists.length - 1].titleNode.onclick = addList(this)
 		this.node.appendChild(this.titleNode)
 		this.node.appendChild(this.listsNode)
 	}

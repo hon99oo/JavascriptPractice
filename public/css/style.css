@@ -1,0 +1,58 @@
+/*전체 그리드*/
+html{
+    background-color: rgb(68,123,184);
+}
+.navigation_bar{
+    background-color: rgb(57,107,160);
+    color:white;
+    padding:10px;
+    text-align:center;
+    line-height:60px;
+    font-size:35px;
+    margin-bottom:20px;
+}
+/*전체 그리드*/
+
+/*List part*/
+#list_title_form{
+    position:absolute;
+    background-color: grey;
+    height:60px;
+    width:270px;
+}
+.newitem_wrapper {
+    margin:10px;
+}
+#list_title_input {
+    width: 100%;
+    height: 22px;
+    margin-bottom: 5px;
+    border: none;
+}
+.list {
+    background-color: grey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-right:10px;
+    margin-top:10px;
+    position: relative;
+    width: 270px;
+    cursor: pointer;
+}
+.list_title {
+    height:30px;
+    width:100px;
+    padding: 8px 34px 8px 10px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+}
+#list_node {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/*List part*/
