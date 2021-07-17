@@ -20,9 +20,8 @@ function addList(board) {
 
 			list = new List(board, title, index)
 			board.lists.splice(index, 0, list)
-			board.listsNode.insertBefore(list.node,
-				board.lists[index + 1].node)
-			board.lists[index + 1].titleNode.setAttribute('list-index', index + 1)
+			board.listsNode.insertBefore(list.node, board.lists[index + 1].node)
+			board.lists[index + 1].titleNode.setAttribute('list_index', index + 1)
 		}
 	}
 }

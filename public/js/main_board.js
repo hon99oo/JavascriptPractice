@@ -18,7 +18,6 @@
 			return '_' + (nextId++).toString()
 		}
 	}
-
 	Board.prototype.render = function () {
 		this.lists.push(new List(this, 'Add a list...', 0, true))
 		for (var i = 0; i < this.lists.length; ++i) {
@@ -29,6 +28,19 @@
 		this.node.appendChild(this.titleNode)
 		this.node.appendChild(this.listsNode)
 	}
+
+	Board.prototype.registerCard = function (card, index) {
+		this.cards[card.id] ={
+			card: card, list: card.list, index: index
+		}
+	}
+
+	Board.prototype.reregisterSubsequent = function (list, index, shift) {
+		for (var i = index; i < list.cards.length; ++i) {
+			this.registerCard(list.cards[i], i + shift)
+		}
+	}
+
 	document.body.onload = function () {
 		var board = new Board()
 
